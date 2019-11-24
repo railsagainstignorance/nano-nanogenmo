@@ -7,7 +7,9 @@ but basically, the task is to generate a 50k+ word novel using code consisting o
 
 ## First stab: SpliceSkip algorithm (2019/11/24)
 
-See the file, invokeSpliceSkip.sh. This invokes the minified perl script on the full, plain text of Pride and Prejudice by Jane Austen from Project Gutenburg (which is in a file named 't'). Should work with other texts from the same collection.
+The output is in spliceSkip_PrideAndPejudice.txt.
+
+To generate this output, run the file, invokeSpliceSkip.sh. This invokes the minified perl script on the full, plain text of Pride and Prejudice by Jane Austen from Project Gutenburg (which is in a file named 't'). Should work with other texts from the same collection.
 
 The full code is
 
