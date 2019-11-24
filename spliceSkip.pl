@@ -10,18 +10,17 @@ sub ss
     my $bp = $1.$2.$3;
     my $w = $2;
     my $t = $4;
-    if( $t =~ /.*?(\W+)(${w})(.*)/i){
-      return $b.$1.$2.ss($3);
+    if( $t =~ /.*?(\W+${w})(.*)/i){
+      return $b.$1.ss($2);
     }
     return $bp;
   }
   return '';
 }
 
-my $stdin = join("", <STDIN>);
-$stdin =~ s/\R//g;
+my $stdin = join("", <STDIN>) =~ s/\R/ /gr =~ s/.*Chapter 1 (.+)/\1/r;
 
-srand(1);
+srand(2);
 my $c = 0;
 while( $c++ < 10 ){
   my $t = ss( $stdin );
