@@ -1,0 +1,25 @@
+# nano-NaNoGenMo
+
+see https://nickm.com/post/2019/11/nano-nanogenmo-or-nnngm/ for context
+
+but basically, the task is to generate a 50k+ word novel using code consisting of no more than 256 chars, and you may use text from Project Gutenberg.
+
+First stab
+
+- to use Pride and Prejudice by Jane Austen, https://www.gutenberg.org/ebooks/1342.
+- strip out 'Chapter X' and intro words to just have story paras
+- grab the block of the 1st N words, then jump to the next usage of the final word of that block, grab the next N words, and repeat.
+- if we finish before 50k words, start again with a different N
+- possibly have N be generated randomly each time
+
+e.g.
+N=6
+It is a truth universally acknowledged, [... acknowledged] to be pretty,
+but she smiled [...smiled] . “Your friend performs delightfully,” he
+continued [...continued] ...
+
+Version 1: kicked off by the word 'acknowledged'.
+
+$ perl spliceSkip.pl < 1342-0-cropped.txt
+
+that a single man in      possession before      Michaelmas, and some of his name?”      “Bingley.”      “Is he married or five thousand a year. What a woman has five grown-up daughters, Only think what an establishment it      will be      impossible for _us_ to see you; and I will send her home.”      “Oh! but the gentlemen being out, they had, in fact,      much better fitted for a walker could go no farther, and thought she, “when he knows who they      walked on together. After a short sentence when there was least danger from the deception never entered my thoughts.”      “When they all removed to believe them fond of each other?”      “could      detain them from it long, expectations.      The little Gardiners, attracted by the approach of the whole party. were in hopes of a letter from him; it told them that, Mr. Bennet had been to Epsom
