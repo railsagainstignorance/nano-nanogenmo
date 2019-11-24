@@ -25,5 +25,5 @@ my $c = 0;
 while( $c++ < 10 ){
   my $t = ss( $stdin );
   $t =~ s/\s+/ /g;
-  print "$t.\n";
+  print "$t.\n\n";
 }

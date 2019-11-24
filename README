@@ -1,10 +1,23 @@
-# nano-NaNoGenMo
+# NaNo-NaNoGenMo
 
 see https://nickm.com/post/2019/11/nano-nanogenmo-or-nnngm/ for context
 
 but basically, the task is to generate a 50k+ word novel using code consisting of no more than 256 chars, and you may use text from Project Gutenberg.
 
-## First stab
+
+## First stab: SpliceSkip algorithm (2019/11/24)
+
+See the file, invokeSpliceSkip.sh. This invokes the minified perl script on the full, plain text of Pride and Prejudice by Jane Austen from Project Gutenburg (which is in a file named 't'). Should work with other texts to from the same source.
+
+The full code is
+
+`perl -e'sub f{$N=1+int(rand(5));if(shift=~/^(\W*(?:\w+\W*){${N}})(\w+)(\W+)(.*)/){$b=$1;if($4=~/.*?(\W+${2})(.*)/i){return$b.$1.f($2);}return$1.$2.$3;}}$_=join("",<>);s/\R/ /g;s/.*Chapter 1 (.+)/\1/;while($c++<2500){$T=f($_)=~s/\s+/ /gr;print"$T.\n\n";}' t`
+
+and uses 256 characters.
+
+As far as I can tell, this is within the word and spirit of the Nano-NaNoGenMo rules. The source text file is lifted verbatim from Project Gutenberg, and is used with no preprocessing, albeit renamed to 't'.
+
+### Notes
 
 - to use Pride and Prejudice by Jane Austen, https://www.gutenberg.org/ebooks/1342.
 - strip out 'Chapter X' and intro words to just have story paras
