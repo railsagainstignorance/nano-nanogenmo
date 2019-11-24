@@ -23,9 +23,8 @@ $stdin =~ s/\R//g;
 
 srand(1);
 my $c = 0;
-while( $c < 50000 ){
+while( $c++ < 10 ){
   my $t = ss( $stdin );
   $t =~ s/\s+/ /g;
   print "$t.\n";
-  $c = $c + scalar(split(/\s+/, $t));
 }
