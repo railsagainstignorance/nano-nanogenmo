@@ -23,3 +23,23 @@ Version 1: kicked off by the word 'acknowledged'.
 $ perl spliceSkip.pl < 1342-0-cropped.txt
 
 that a single man in      possession before      Michaelmas, and some of his name?”      “Bingley.”      “Is he married or five thousand a year. What a woman has five grown-up daughters, Only think what an establishment it      will be      impossible for _us_ to see you; and I will send her home.”      “Oh! but the gentlemen being out, they had, in fact,      much better fitted for a walker could go no farther, and thought she, “when he knows who they      walked on together. After a short sentence when there was least danger from the deception never entered my thoughts.”      “When they all removed to believe them fond of each other?”      “could      detain them from it long, expectations.      The little Gardiners, attracted by the approach of the whole party. were in hopes of a letter from him; it told them that, Mr. Bennet had been to Epsom
+
+Version 2: random-sized jump (1-6) for each iteration, so always diverges. Loops and starts again until > 50k words
+
+$ perl spliceSkip.pl < 1342-0-cropped.txt
+
+It is so well fixed invitation enough. “Why, my dear, young man of England; tha
+t he came from there is the most beautiful creature I . Everybody said how well
+she was the only established as at his table— nor of its office.” “ your admirat
+ion of her fine eyes.” “ not make them; but suspecting them to cards?” said her
+quite well.” Elizabeth thanked him that , she drew near the card- tables, cover
+screens, .
+It is so well fixed invitation enough. “Why, my dear, young man of England; tha
+t he came down one of them.” “ is very likely that. You and the girls may go and
+see Mr. Bingley when there are -twenty years had been insufficient to make any
+reply to the instrument by her sister Mary, , who, with some thought of fixing i
+n -town indifference to decorum, and she could not help saying: “Oh, that my mem
+ory as the most eligible match; and esteem for our cousins health and happiness
+against it; and, therefore, , I would have you be on _your_ resolution and good
+conduct, is being serious likewise.” “Well, then, you need not be in love with m
+e—I believe

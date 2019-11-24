@@ -1,19 +1,31 @@
 #!/usr/bin/perl
-# N=6
+my $N = 5;
+
 sub ss
 {
-  my $w = $_[0];
-  print STDERR "DEBUG: in ss: w=${w}\n";
-  my $text = $_[1];
-  if( $text =~ /.*?\W+${w}\W+((?:\w+\W*){5})(\w+)(\W+)(.*)/i ){
-    print STDERR "DEBUG: 1='".$1."'\n";
-    print STDERR "DEBUG: 2='".$2."'\n";
-    print STDERR "DEBUG: 3='".$3."'\n";
-    return $1.$2.$3.ss($2, $4);
+  $N = 1 + int(rand(5));
+  my $text = shift;
+  if( $text =~ /^(\W*(?:\w+\W*){$N})(\w+)(\W+)(.*)/){
+    my $b = $1;
+    my $bp = $1.$2.$3;
+    my $w = $2;
+    my $t = $4;
+    if( $t =~ /.*?(\W+)(${w})(.*)/i){
+      return $b.$1.$2.ss($3);
+    }
+    return $bp;
   }
   return '';
 }
 
 my $stdin = join("", <STDIN>);
 $stdin =~ s/\R//g;
-print ss( 'acknowledged', $stdin );
+
+srand(1);
+my $c = 0;
+while( $c < 50000 ){
+  my $t = ss( $stdin );
+  $t =~ s/\s+/ /g;
+  print "$t.\n";
+  $c = $c + scalar(split(/\s+/, $t));
+}
