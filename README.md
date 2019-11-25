@@ -7,7 +7,7 @@ but basically, the task is to generate a 50k+ word novel using code consisting o
 
 ## First stab: SpliceSkip algorithm (2019/11/24)
 
-The output is in spliceSkip_PrideAndPejudice.txt. 
+The output is in spliceSkip_PrideAndPejudice.txt.
 
 This example of a generated novel has been [submitted to the NaNoGenMo initiative](https://github.com/NaNoGenMo/2019/issues/114).
 
@@ -79,3 +79,7 @@ It is acknowledged, that a single?” “Oh! Single, my dear, to . Bennet,” ,�
 It is acknowledged, that a single man may . Bennet,” said his wife impatiently. “.” “_You_ are dancing with the room,” said Mr. . Darcy walked off; and Elizabeth remained , with great spirit among her eldest daughters, was entailed, in default .
 
 It is a truth universally acknowledged to be pretty, but she asked him at last how it was; everybody says that Mrs. Long does not keep a pack of wine a day.” “Then you ought,” said Mrs. Hurst ; and though the younger sisters, who, with Lady Lucas.” , he was struck with the action of dancing. I moved this gentleman dislikes the inducement, my dear Miss Eliza, were usually tempted me further by his gift. . He meant to provide for me no hope from -law said, in listening to Lady Catherine talk, which she did not you all learn? You ought to beg his own arts,” said , Fitzwilliam asked her why she was he to be the propriety of the particulars immediately following of . Wickham’s charge, exceedingly shocked her; the ——shire Militia, in which he , had there renewed a slight acquaintance—an acquaintance, I have made a stronger impression on his parting obeisance, was able to do so. lady from whom they walked down the gardener, who met them , at least of surprise, only ten minutes sooner, they should even speak to her family! Never in her hand! she answered mechanically to direct . Her thoughts were all fixed on that it was ten miles round. its narrowest .
+
+## Second stab: RiffleShuffle algorithm (2019/11/25)
+
+see invokeRiffleShuffle.sh
