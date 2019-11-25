@@ -1,0 +1,1 @@
+$r=[["I","We","You"],["ran","hop","go"],["to","by"],["the","a"],["red","blue","grey"],["egg","cup"],["by","for"],["my","our"],["pal","mum","bud"],["or"],["dad","foe"]];sub p{my($s,$i)=@_;my$w=$r->[$i];if(!@$w){print"$s.\n";return}map{p("$s $_",$i+1)}@$w}p;
