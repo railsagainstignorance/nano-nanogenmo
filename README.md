@@ -82,7 +82,10 @@ It is a truth universally acknowledged to be pretty, but she asked him at last h
 
 ## Third stab: Permute algorithm (2019/11/26)
 
-see invokePermute.sh
+The output is in permute.txt.
+
+See invokePermute.sh for how it works.
+
 ```
  I go by our grey cup for my pal.
  I go by our grey cup for my owl.
