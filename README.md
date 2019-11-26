@@ -83,7 +83,7 @@ It is a truth universally acknowledged to be pretty, but she asked him at last h
 ## Third stab: Permute algorithm (2019/11/26)
 
 see invokePermute.sh
-
+```
  I go by our grey cup for my pal.
  I go by our grey cup for my owl.
  I go by our grey cup for my bud.
@@ -105,3 +105,4 @@ see invokePermute.sh
  We ran to the red egg of your dog.
  We ran to the red egg of your set.
  etc
+```
