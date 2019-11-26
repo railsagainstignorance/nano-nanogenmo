@@ -2,7 +2,9 @@
 
 # For spliceSkip algorithm.
 # Code was developed in permute.pl, then minified into p.pl
-# Total chars = 249 (depends if you count \n - if so, just remove them)
+# Total chars = 249
+# (depends if you count \n - if so, just remove them)
+# (The qw(...) thing saves a few chars if the list has more than 2 strings in it)
 
 perl -e'$r=[
 [qw(I We You)],
