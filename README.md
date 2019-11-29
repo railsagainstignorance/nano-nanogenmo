@@ -109,3 +109,10 @@ See invokePermute.sh for how it works.
  We ran to the red egg of your set.
  etc
 ```
+
+## Fifth Stab: returning to Permute to deconstruct Yogi Berra.
+
+The output is in yogi.txt, with added initial comments.
+Produced by: `sh invokeYogi.sh`
+
+The Yogi Berra phrase provides a more appealing foundation than the fairly arbitrary "I go by our grey cup..." from the first go at permuting.

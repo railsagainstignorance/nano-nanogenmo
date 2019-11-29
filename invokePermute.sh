@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# For spliceSkip algorithm.
+# For Permute algorithm.
 # Code was developed in permute.pl, then minified into p.pl
 # Total chars = 249
 # (depends if you count \n - if so, just remove them)
