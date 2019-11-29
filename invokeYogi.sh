@@ -1,7 +1,7 @@
 # Deconstructing Yogi Berra
 # (with the Permute algorithm).
 #
-# Code was developed in permute.pl, then minified into p.pl
+# Code was developed in permute.pl, then minified into p.pl, then refactored directly in this file
 # Total chars = 251.
 # Produces 55040 words, on 8960 lines.
 # Yogi Berra quote via https://en.wikiquote.org/wiki/Yogi_Berra
