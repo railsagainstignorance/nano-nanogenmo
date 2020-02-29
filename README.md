@@ -82,6 +82,8 @@ It is a truth universally acknowledged to be pretty, but she asked him at last h
 
 ## Third stab: Permute algorithm (2019/11/26)
 
+[submitted to the NaNoGenMo initiative](https://github.com/NaNoGenMo/2019/issues/117)
+
 The output is in permute.txt.
 
 See invokePermute.sh for how it works.
@@ -111,6 +113,8 @@ See invokePermute.sh for how it works.
 ```
 
 ## Fifth Stab: returning to Permute to deconstruct Yogi Berra.
+
+[submitted to the NaNoGenMo initiative](https://github.com/NaNoGenMo/2019/issues/131)
 
 The output is in yogi.txt, with added initial comments.
 Produced by: `sh invokeYogi.sh`
